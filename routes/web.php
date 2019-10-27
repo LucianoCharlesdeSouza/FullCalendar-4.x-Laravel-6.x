@@ -12,9 +12,6 @@
 */
 
 Route::get('/', 'FullCalendarController@index')->name('index');
-Route::get('/npm', 'FullCalendarController@npm')->name('npm');
-
-
 
 Route::get('/load-events', 'EventController@loadEvents')->name('routeLoadEvents');
 
