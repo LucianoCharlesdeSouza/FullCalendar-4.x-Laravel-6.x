@@ -3,6 +3,7 @@ Projeto implementando FullCalendar 4.x com Laravel 6.x
 
 Passo a passo
 ```composer install```
+### Crie o arquivo .env com as configurações de url e dados de acesso ao banco de dados
 
 
 # Link da playlist:
