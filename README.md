@@ -11,8 +11,7 @@ Projeto implementando FullCalendar 4.x com Laravel 6.x
 #### Rode laravel-mix
 ```npm run dev```
 #### Rode opcionalmente as migrations e popule com alguns eventos padrões
-```php artisan migrate:fresh --seed```
-
+```php artisan migrate --seed```
 
 
 # Link da playlist:
