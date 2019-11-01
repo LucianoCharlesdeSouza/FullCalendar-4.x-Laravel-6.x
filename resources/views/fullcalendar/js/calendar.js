@@ -132,9 +132,13 @@ document.addEventListener('DOMContentLoaded', function() {
             calendar.unselect();
 
         },
+        eventReceive: function(element) {
+          element.event.remove();
+        },
         events: routeEvents('routeLoadEvents'),
 
     });
+    objCalendar = calendar;
     calendar.render();
 
 });
