@@ -156,7 +156,8 @@ function sendEvent(route, data_) {
         success: function (json) {
 
             if (json) {
-                location.reload();
+                objCalendar.refetchEvents();
+                $("#modalCalendar").modal('hide');
             }
         },
         error:function (json) {
