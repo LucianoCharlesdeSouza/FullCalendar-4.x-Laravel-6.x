@@ -116,6 +116,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             clearMessages('.message');
             resetForm("#formEvent");
+            $("#modalCalendar input[name='id']").val('');
 
             $("#modalCalendar").modal('show');
             $("#modalCalendar #titleModal").text('Adicionar Evento');
@@ -132,8 +133,8 @@ document.addEventListener('DOMContentLoaded', function() {
             calendar.unselect();
 
         },
-        eventReceive: function(element) {
-          element.event.remove();
+        eventReceive: function(element){
+            element.event.remove();
         },
         events: routeEvents('routeLoadEvents'),
 
