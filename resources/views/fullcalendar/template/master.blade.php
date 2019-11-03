@@ -21,8 +21,8 @@
 <script src='{{asset('assets/fullcalendarNPM/js/jquery-and-mask-and-moment.js')}}'></script>
 <script src='{{asset('assets/fullcalendarNPM/js/bootstrap.js')}}'></script>
 
-<script>let objCalendar;</script>
 <script src='{{asset('assets/fullcalendarNPM/js/scriptCalendar.js')}}'></script>
+
 
 </body>
 </html>
