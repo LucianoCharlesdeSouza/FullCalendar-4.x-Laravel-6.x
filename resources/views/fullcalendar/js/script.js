@@ -1,5 +1,3 @@
-
-
 $(function () {
 
     $('.date-time').mask('00/00/0000 00:00:00');
@@ -15,6 +13,9 @@ $(function () {
 
         clearMessages('.message');
         resetForm("#formFastEvent");
+        $("#modalFastEvent input[name='id']").val('');
+
+        showModalCreateFastEvent = true;
 
         $('#modalFastEvent').modal('show');
         $("#modalFastEvent #titleModal").text('Criar Evento Rápido');
@@ -22,10 +23,12 @@ $(function () {
     });
 
 
-    $('.fc-event').click(function () {
+    $(document).on('click','.event', function () {
 
         clearMessages('.message');
         resetForm("#formFastEvent");
+
+        showModalUpdateFastEvent = true;
 
         let Event = JSON.parse($(this).attr('data-event'));
 
@@ -79,6 +82,7 @@ $(function () {
 
         let id = $("#modalFastEvent input[name='id']").val();
 
+
         let Event = {
             id: id,
             _method: 'DELETE'
@@ -86,7 +90,10 @@ $(function () {
 
         let route = routeEvents('routeFastEventDelete');
 
+        showModalUpdateFastEvent = true;
         sendEvent(route,Event);
+
+        $(`#boxFastEvent${id}`).remove();
 
     });
 
@@ -145,6 +152,9 @@ $(function () {
 
 });
 
+let objCalendar;
+let showModalUpdateFastEvent = false;
+let showModalCreateFastEvent = false;
 
 function sendEvent(route, data_) {
 
@@ -158,6 +168,36 @@ function sendEvent(route, data_) {
             if (json) {
                 objCalendar.refetchEvents();
                 $("#modalCalendar").modal('hide');
+            }
+
+            if(showModalUpdateFastEvent === true){
+                showModalUpdateFastEvent = false;
+                $("#modalFastEvent").modal('hide');
+
+                let stringJson = `{"id":"${data_.id}","title":"${data_.title}","color":"${data_.color}","start":"${data_.start}","end":"${data_.end}"}`;
+
+                $(`#boxFastEvent${data_.id}`).attr('data-event', stringJson);
+                $(`#boxFastEvent${data_.id}`).text(data_.title);
+                $(`#boxFastEvent${data_.id}`).css({
+                    "backgroundColor": `${data_.color}`,
+                    "border": `1px solid ${data_.color}`});
+
+            }
+
+            if(showModalCreateFastEvent === true){
+                showModalCreateFastEvent = false;
+                $("#modalFastEvent").modal('hide');
+
+                let stringJson = `{"id":"${json.created}","title":"${data_.title}","color":"${data_.color}","start":"${data_.start}","end":"${data_.end}"}`;
+
+                let newEvent = `<div id="boxFastEvent${json.created}"
+                        style="padding: 4px; border: 1px solid ${data_.color}; background-color: ${data_.color}"
+                        class='fc-event event'
+                        data-event='${stringJson}'>
+                        ${data_.title}
+                    </div>`;
+                $('#external-events-list').append(newEvent);
+
             }
         },
         error:function (json) {
