@@ -1,4 +1,4 @@
-@extends('fullcalendar.template.masterNPM')
+@extends('fullcalendar.template.master')
 @section('content')
 
     @include('fullcalendar.modais.events')
