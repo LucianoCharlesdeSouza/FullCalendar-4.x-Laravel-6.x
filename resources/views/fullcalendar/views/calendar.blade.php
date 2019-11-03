@@ -27,7 +27,7 @@
         <p>
             <input type='checkbox' id='drop-remove'/>
             <label for='drop-remove'>remover após arrastar</label>
-            <button class="btn btn-sm btn-success" id="newFastEvent">Criar novo evento</button>
+            <button class="btn btn-sm btn-success" id="newFastEvent" style="font-size: 1em; width: 100%;">Criar novo evento</button>
         </p>
     </div>
 
