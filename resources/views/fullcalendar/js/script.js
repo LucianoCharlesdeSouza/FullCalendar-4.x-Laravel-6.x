@@ -192,7 +192,7 @@ function sendEvent(route, data_) {
 
                 let newEvent = `<div id="boxFastEvent${json.created}"
                         style="padding: 4px; border: 1px solid ${data_.color}; background-color: ${data_.color}"
-                        class='fc-event event'
+                        class='fc-event event text-center'
                         data-event='${stringJson}'>
                         ${data_.title}
                     </div>`;
