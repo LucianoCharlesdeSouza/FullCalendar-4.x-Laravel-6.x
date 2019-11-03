@@ -10,7 +10,7 @@ Projeto implementando FullCalendar 4.x com Laravel 6.x
 ```npm install```
 #### Rode laravel-mix
 ```npm run dev```
-#### Rode opcionalmente as migrations e popule com alguns eventos padrões
+#### Rode as migrations e popule (opcionalmente) com alguns eventos padrões
 ```php artisan migrate --seed```
 
 
