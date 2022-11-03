@@ -438,3 +438,267 @@ Stack trace:
 [stacktrace]
 #0 {main}
 "} 
+[2022-11-03 22:16:27] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (Error(code: 0): Class \"Illuminate\\Support\\Collection\" not found at /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Support/helpers.php:110)
+[stacktrace]
+#0 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(240): collect()
+#1 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(202): Illuminate\\Log\\LogManager->createStackDriver()
+#2 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(118): Illuminate\\Log\\LogManager->resolve()
+#3 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\\Log\\LogManager->get()
+#4 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(543): Illuminate\\Log\\LogManager->driver()
+#5 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(123): Illuminate\\Log\\LogManager->error()
+#6 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/app/Exceptions/Handler.php(37): Illuminate\\Foundation\\Exceptions\\Handler->report()
+#7 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(88): App\\Exceptions\\Handler->report()
+#8 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(130): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleException()
+#9 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#10 {main}
+"} 
+[2022-11-03 22:16:27] laravel.ERROR: During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Support\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Support/Collection.php:1349
+Stack trace:
+#0 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Support/Collection.php(11): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/composer/ClassLoader.php(571): include('...')
+#2 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/composer/ClassLoader.php(428): Composer\Autoload\includeFile()
+#3 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Support/helpers.php(110): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(89): collect()
+#5 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(78): Illuminate\Foundation\PackageManifest->config()
+#6 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate\Foundation\PackageManifest->aliases()
+#7 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(230): Illuminate\Foundation\Bootstrap\RegisterFacades->bootstrap()
+#8 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(310): Illuminate\Foundation\Application->bootstrapWith()
+#9 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(127): Illuminate\Foundation\Console\Kernel->bootstrap()
+#10 Command line code(1): Illuminate\Foundation\Console\Kernel->handle()
+#11 {main} {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\\Support\\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Support/Collection.php:1349
+Stack trace:
+#0 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Support/Collection.php(11): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError()
+#1 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/composer/ClassLoader.php(571): include('...')
+#2 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/composer/ClassLoader.php(428): Composer\\Autoload\\includeFile()
+#3 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Support/helpers.php(110): Composer\\Autoload\\ClassLoader->loadClass()
+#4 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(89): collect()
+#5 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(78): Illuminate\\Foundation\\PackageManifest->config()
+#6 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate\\Foundation\\PackageManifest->aliases()
+#7 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(230): Illuminate\\Foundation\\Bootstrap\\RegisterFacades->bootstrap()
+#8 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith()
+#9 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#10 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle()
+#11 {main} at /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Support/Collection.php:11)
+[stacktrace]
+#0 {main}
+"} 
+[2022-11-03 22:16:27] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (Error(code: 0): Class \"Illuminate\\Support\\Collection\" not found at /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Support/helpers.php:110)
+[stacktrace]
+#0 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(240): collect()
+#1 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(202): Illuminate\\Log\\LogManager->createStackDriver()
+#2 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(118): Illuminate\\Log\\LogManager->resolve()
+#3 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\\Log\\LogManager->get()
+#4 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(543): Illuminate\\Log\\LogManager->driver()
+#5 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(123): Illuminate\\Log\\LogManager->error()
+#6 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/app/Exceptions/Handler.php(37): Illuminate\\Foundation\\Exceptions\\Handler->report()
+#7 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(88): App\\Exceptions\\Handler->report()
+#8 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(130): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleException()
+#9 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#10 {main}
+"} 
+[2022-11-03 22:16:27] laravel.ERROR: During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Support\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Support/Collection.php:1349
+Stack trace:
+#0 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Support/Collection.php(11): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/composer/ClassLoader.php(571): include('...')
+#2 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/composer/ClassLoader.php(428): Composer\Autoload\includeFile()
+#3 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Support/helpers.php(110): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(89): collect()
+#5 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(78): Illuminate\Foundation\PackageManifest->config()
+#6 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate\Foundation\PackageManifest->aliases()
+#7 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(230): Illuminate\Foundation\Bootstrap\RegisterFacades->bootstrap()
+#8 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(310): Illuminate\Foundation\Application->bootstrapWith()
+#9 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(127): Illuminate\Foundation\Console\Kernel->bootstrap()
+#10 Command line code(1): Illuminate\Foundation\Console\Kernel->handle()
+#11 {main} {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\\Support\\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Support/Collection.php:1349
+Stack trace:
+#0 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Support/Collection.php(11): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError()
+#1 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/composer/ClassLoader.php(571): include('...')
+#2 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/composer/ClassLoader.php(428): Composer\\Autoload\\includeFile()
+#3 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Support/helpers.php(110): Composer\\Autoload\\ClassLoader->loadClass()
+#4 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(89): collect()
+#5 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(78): Illuminate\\Foundation\\PackageManifest->config()
+#6 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate\\Foundation\\PackageManifest->aliases()
+#7 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(230): Illuminate\\Foundation\\Bootstrap\\RegisterFacades->bootstrap()
+#8 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith()
+#9 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#10 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle()
+#11 {main} at /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Support/Collection.php:11)
+[stacktrace]
+#0 {main}
+"} 
+[2022-11-03 22:17:27] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (Error(code: 0): Class \"Illuminate\\Support\\Collection\" not found at /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Support/helpers.php:110)
+[stacktrace]
+#0 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(240): collect()
+#1 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(202): Illuminate\\Log\\LogManager->createStackDriver()
+#2 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(118): Illuminate\\Log\\LogManager->resolve()
+#3 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\\Log\\LogManager->get()
+#4 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(543): Illuminate\\Log\\LogManager->driver()
+#5 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(123): Illuminate\\Log\\LogManager->error()
+#6 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/app/Exceptions/Handler.php(37): Illuminate\\Foundation\\Exceptions\\Handler->report()
+#7 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(88): App\\Exceptions\\Handler->report()
+#8 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(130): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleException()
+#9 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#10 {main}
+"} 
+[2022-11-03 22:17:27] laravel.ERROR: During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Support\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Support/Collection.php:1349
+Stack trace:
+#0 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Support/Collection.php(11): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/composer/ClassLoader.php(571): include('...')
+#2 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/composer/ClassLoader.php(428): Composer\Autoload\includeFile()
+#3 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Support/helpers.php(110): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(89): collect()
+#5 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(78): Illuminate\Foundation\PackageManifest->config()
+#6 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate\Foundation\PackageManifest->aliases()
+#7 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(230): Illuminate\Foundation\Bootstrap\RegisterFacades->bootstrap()
+#8 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(310): Illuminate\Foundation\Application->bootstrapWith()
+#9 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(127): Illuminate\Foundation\Console\Kernel->bootstrap()
+#10 Command line code(1): Illuminate\Foundation\Console\Kernel->handle()
+#11 {main} {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\\Support\\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Support/Collection.php:1349
+Stack trace:
+#0 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Support/Collection.php(11): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError()
+#1 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/composer/ClassLoader.php(571): include('...')
+#2 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/composer/ClassLoader.php(428): Composer\\Autoload\\includeFile()
+#3 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Support/helpers.php(110): Composer\\Autoload\\ClassLoader->loadClass()
+#4 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(89): collect()
+#5 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(78): Illuminate\\Foundation\\PackageManifest->config()
+#6 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate\\Foundation\\PackageManifest->aliases()
+#7 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(230): Illuminate\\Foundation\\Bootstrap\\RegisterFacades->bootstrap()
+#8 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith()
+#9 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#10 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle()
+#11 {main} at /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Support/Collection.php:11)
+[stacktrace]
+#0 {main}
+"} 
+[2022-11-03 22:17:27] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (Error(code: 0): Class \"Illuminate\\Support\\Collection\" not found at /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Support/helpers.php:110)
+[stacktrace]
+#0 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(240): collect()
+#1 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(202): Illuminate\\Log\\LogManager->createStackDriver()
+#2 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(118): Illuminate\\Log\\LogManager->resolve()
+#3 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\\Log\\LogManager->get()
+#4 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(543): Illuminate\\Log\\LogManager->driver()
+#5 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(123): Illuminate\\Log\\LogManager->error()
+#6 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/app/Exceptions/Handler.php(37): Illuminate\\Foundation\\Exceptions\\Handler->report()
+#7 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(88): App\\Exceptions\\Handler->report()
+#8 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(130): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleException()
+#9 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#10 {main}
+"} 
+[2022-11-03 22:17:27] laravel.ERROR: During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Support\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Support/Collection.php:1349
+Stack trace:
+#0 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Support/Collection.php(11): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/composer/ClassLoader.php(571): include('...')
+#2 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/composer/ClassLoader.php(428): Composer\Autoload\includeFile()
+#3 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Support/helpers.php(110): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(89): collect()
+#5 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(78): Illuminate\Foundation\PackageManifest->config()
+#6 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate\Foundation\PackageManifest->aliases()
+#7 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(230): Illuminate\Foundation\Bootstrap\RegisterFacades->bootstrap()
+#8 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(310): Illuminate\Foundation\Application->bootstrapWith()
+#9 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(127): Illuminate\Foundation\Console\Kernel->bootstrap()
+#10 Command line code(1): Illuminate\Foundation\Console\Kernel->handle()
+#11 {main} {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\\Support\\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Support/Collection.php:1349
+Stack trace:
+#0 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Support/Collection.php(11): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError()
+#1 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/composer/ClassLoader.php(571): include('...')
+#2 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/composer/ClassLoader.php(428): Composer\\Autoload\\includeFile()
+#3 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Support/helpers.php(110): Composer\\Autoload\\ClassLoader->loadClass()
+#4 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(89): collect()
+#5 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(78): Illuminate\\Foundation\\PackageManifest->config()
+#6 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate\\Foundation\\PackageManifest->aliases()
+#7 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(230): Illuminate\\Foundation\\Bootstrap\\RegisterFacades->bootstrap()
+#8 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith()
+#9 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#10 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle()
+#11 {main} at /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Support/Collection.php:11)
+[stacktrace]
+#0 {main}
+"} 
+[2022-11-03 22:18:27] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (Error(code: 0): Class \"Illuminate\\Support\\Collection\" not found at /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Support/helpers.php:110)
+[stacktrace]
+#0 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(240): collect()
+#1 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(202): Illuminate\\Log\\LogManager->createStackDriver()
+#2 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(118): Illuminate\\Log\\LogManager->resolve()
+#3 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\\Log\\LogManager->get()
+#4 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(543): Illuminate\\Log\\LogManager->driver()
+#5 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(123): Illuminate\\Log\\LogManager->error()
+#6 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/app/Exceptions/Handler.php(37): Illuminate\\Foundation\\Exceptions\\Handler->report()
+#7 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(88): App\\Exceptions\\Handler->report()
+#8 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(130): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleException()
+#9 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#10 {main}
+"} 
+[2022-11-03 22:18:27] laravel.ERROR: During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Support\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Support/Collection.php:1349
+Stack trace:
+#0 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Support/Collection.php(11): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/composer/ClassLoader.php(571): include('...')
+#2 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/composer/ClassLoader.php(428): Composer\Autoload\includeFile()
+#3 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Support/helpers.php(110): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(89): collect()
+#5 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(78): Illuminate\Foundation\PackageManifest->config()
+#6 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate\Foundation\PackageManifest->aliases()
+#7 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(230): Illuminate\Foundation\Bootstrap\RegisterFacades->bootstrap()
+#8 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(310): Illuminate\Foundation\Application->bootstrapWith()
+#9 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(127): Illuminate\Foundation\Console\Kernel->bootstrap()
+#10 Command line code(1): Illuminate\Foundation\Console\Kernel->handle()
+#11 {main} {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\\Support\\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Support/Collection.php:1349
+Stack trace:
+#0 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Support/Collection.php(11): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError()
+#1 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/composer/ClassLoader.php(571): include('...')
+#2 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/composer/ClassLoader.php(428): Composer\\Autoload\\includeFile()
+#3 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Support/helpers.php(110): Composer\\Autoload\\ClassLoader->loadClass()
+#4 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(89): collect()
+#5 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(78): Illuminate\\Foundation\\PackageManifest->config()
+#6 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate\\Foundation\\PackageManifest->aliases()
+#7 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(230): Illuminate\\Foundation\\Bootstrap\\RegisterFacades->bootstrap()
+#8 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith()
+#9 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#10 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle()
+#11 {main} at /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Support/Collection.php:11)
+[stacktrace]
+#0 {main}
+"} 
+[2022-11-03 22:18:27] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (Error(code: 0): Class \"Illuminate\\Support\\Collection\" not found at /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Support/helpers.php:110)
+[stacktrace]
+#0 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(240): collect()
+#1 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(202): Illuminate\\Log\\LogManager->createStackDriver()
+#2 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(118): Illuminate\\Log\\LogManager->resolve()
+#3 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(98): Illuminate\\Log\\LogManager->get()
+#4 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(543): Illuminate\\Log\\LogManager->driver()
+#5 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(123): Illuminate\\Log\\LogManager->error()
+#6 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/app/Exceptions/Handler.php(37): Illuminate\\Foundation\\Exceptions\\Handler->report()
+#7 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(88): App\\Exceptions\\Handler->report()
+#8 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(130): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleException()
+#9 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#10 {main}
+"} 
+[2022-11-03 22:18:27] laravel.ERROR: During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Support\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Support/Collection.php:1349
+Stack trace:
+#0 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Support/Collection.php(11): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/composer/ClassLoader.php(571): include('...')
+#2 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/composer/ClassLoader.php(428): Composer\Autoload\includeFile()
+#3 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Support/helpers.php(110): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(89): collect()
+#5 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(78): Illuminate\Foundation\PackageManifest->config()
+#6 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate\Foundation\PackageManifest->aliases()
+#7 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(230): Illuminate\Foundation\Bootstrap\RegisterFacades->bootstrap()
+#8 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(310): Illuminate\Foundation\Application->bootstrapWith()
+#9 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(127): Illuminate\Foundation\Console\Kernel->bootstrap()
+#10 Command line code(1): Illuminate\Foundation\Console\Kernel->handle()
+#11 {main} {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\\Support\\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Support/Collection.php:1349
+Stack trace:
+#0 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Support/Collection.php(11): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError()
+#1 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/composer/ClassLoader.php(571): include('...')
+#2 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/composer/ClassLoader.php(428): Composer\\Autoload\\includeFile()
+#3 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Support/helpers.php(110): Composer\\Autoload\\ClassLoader->loadClass()
+#4 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(89): collect()
+#5 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(78): Illuminate\\Foundation\\PackageManifest->config()
+#6 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate\\Foundation\\PackageManifest->aliases()
+#7 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(230): Illuminate\\Foundation\\Bootstrap\\RegisterFacades->bootstrap()
+#8 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith()
+#9 /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#10 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle()
+#11 {main} at /home/souza/projetos-laravel/FullCalendar-4.x-Laravel-6.x/vendor/laravel/framework/src/Illuminate/Support/Collection.php:11)
+[stacktrace]
+#0 {main}
+"} 
