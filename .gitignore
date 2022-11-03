@@ -1,0 +1,5 @@
+/vendor
+/docker
+/node_modules
+docker-compose.yml
+/.env

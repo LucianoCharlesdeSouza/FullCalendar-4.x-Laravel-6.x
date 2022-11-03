@@ -22,6 +22,10 @@ document.addEventListener('DOMContentLoaded', function() {
             center: 'title',
             right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
         },
+        // validRange: {
+        //     start: '2022-08-01',
+        //     end: '2022-08-10'
+        // },
         navLinks: true,
         locale: 'pt-br',
         navLinks: true,
@@ -135,6 +139,12 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         eventReceive: function(element){
             element.event.remove();
+        },
+        dayRender: function (date) {
+            console.log(date);
+        // if (date > maxDate){
+        //     $(cell).addClass('disabled');
+        // }
         },
         events: routeEvents('routeLoadEvents'),
 
