@@ -1,4 +1,4 @@
-# FullCalendar-4.x-Laravel-6.x
+# FullCalendar-4.x-Laravel-8.x
 Projeto implementando FullCalendar 4.x com Laravel 6.x
 
 ### Passo a passo
