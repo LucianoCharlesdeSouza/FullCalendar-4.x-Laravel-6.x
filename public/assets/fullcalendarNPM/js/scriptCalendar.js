@@ -376,7 +376,7 @@ document.addEventListener('DOMContentLoaded', function() {
             element.event.remove();
         },
         dayRender: function (date) {
-            console.log(date);
+            // console.log(date);
         // if (date > maxDate){
         //     $(cell).addClass('disabled');
         // }
